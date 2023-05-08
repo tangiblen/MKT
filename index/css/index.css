@@ -1,10 +1,53 @@
+@font-face {
+    font-family: 'CN-Bold';
+    src: url("../fonts/CN-Bold.otf");
+}
+
+@font-face {
+    font-family: 'CN-ExtraLight';
+    src: url("../fonts/CN-ExtraLight.otf");
+}
+
+@font-face {
+    font-family: 'CN-Heavy';
+    src: url("../fonts/CN-Heavy.otf");
+}
+
+@font-face {
+    font-family: 'CN-Light';
+    src: url("../fonts/CN-Light.otf");
+}
+
+@font-face {
+    font-family: 'CN-Medium';
+    src: url("../fonts/CN-Medium.otf");
+}
+
+@font-face {
+    font-family: 'CN-Normal';
+    src: url("../fonts/CN-Normal.otf");
+}
+
+@font-face {
+    font-family: 'CN-Regular';
+    src: url("../fonts/CN-Regular.otf");
+}
+
 *{
     margin: 0;
     padding: 0;
 }
+body{
+    font-family: Arial, sans-serif,CN-Bold,CN-ExtraLight,CN-Heavy,CN-Medium,CN-Light,CN-Normal,CN-Regular;
+}
+.nav-link:focus, .nav-link:hover{
+    color: rgb(68, 87, 101);
+}
 .content{
-    margin: auto;
+    width: 100%;
     background-color: #fffbf0;
+    height: auto;
+    overflow: hidden;
 }
 .modle{
     width: 1600px;
@@ -12,66 +55,241 @@
 }
 .banner{
     width: 100%;
-    height: 568px;
+}
+.img-fluid{
+    display: block;
+    margin: auto;
 }
 .tab_tips{
-    width: 1600px;
-    height: 500px;
-    background-color: blanchedalmond;
+    width: 100%;
+    height: auto;
+}
+.tab_tips_g{
+    display: flex;
+    max-width: 2000px;
+    margin: auto;
+    height: auto;
 }
 .nav{
-    width: 240px;
-    height: 100%;
-    background: #ff3f54;
+    width: 300px;
+    height: 675px;
+    background: rgb(255 194 23);
 }
 .nav-link{
     width: 100%;
-    height: 76px;
+    height: 100px;
     border-top: 1px solid #fffbf0;
     border-bottom: 1px solid #fffbf0;
     color: #fff;
-    font-size: 20px;
+    font-size: 36pt;
     text-align: center;
-    line-height: 60px;
+    line-height: 86px;
 }
 .nav-link:nth-child(1){
-    margin-top: 60px;
+    margin-top: 120px;
 }
 .nav-link:nth-child(2){
     border: 0;
 }
 .active{
     background: #fffbf0;
-    color: #ff3f54;
+    color: rgb(68, 87, 101);
 }
-.emphasize{
-    width: 1600px;
-    height: 500px;
-    background-color: blueviolet;
+.title{
+    font-size: 36pt;
+    color: rgb(68, 87, 101);
+    padding-top: 80px;
+    line-height: 66px;
 }
-.testing{
-    width: 1600px;
-    height: 500px;
-    background-color: red;
+.specific{
+    font-size: 18pt;
+    padding-top: 40px;
+}
+.tab_tips_right{
+    height: 100%;
+    width: 100%;
+}
+.tab_1{
+    display: flex;
+}
+.tab_1_content{
+    width: 864px;
+    padding: 66px;
+    line-height: 54px;
+}
+.tab_img{
+    width: 600px;
+    height: 800px;
+    background-position-y: 45%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.tab_img_1{
+    background-image: url(https://ddileaf-prod-manage-img.oss-cn-shanghai.aliyuncs.com/officialsite/images/tmp/%E5%88%86%E5%88%87-02.png);
+}
+.tab_img_2{
+    background-image: url(https://ddileaf-prod-manage-img.oss-cn-shanghai.aliyuncs.com/officialsite/images/tmp/%E5%88%86%E5%88%87-03.png);
+}
+.tab_img_3{
+    background-image: url(https://ddileaf-prod-manage-img.oss-cn-shanghai.aliyuncs.com/officialsite/images/tmp/%E5%88%86%E5%88%87-04.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+#tab_3,#tab_2{
+    display: none;
+}
+.dot{
+    color: red;
+    font-weight: 600;
+}
+.container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 1600px;
+}
+.posi{
+    position: absolute;
+    bottom: 50px;
 }
 .row>*{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+.imgtab{
+    width: 100%;
+    height: 100%;
+}
+.card{
+    height: 600px;
+    background-color:  rgb(255 194 23) !important;
+    border-radius: 0;
+    border: 0;
+}
+.btn-lg{
+    border-radius: 0;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    min-width: 160px;
+    border: 0;
+}
+.green{
+    background-color:  rgb(186 220 77);
+    color: rgb(68, 87, 101);
+    margin-right: 10px;
+}
+.orange{
+    background-color: rgb(68, 87, 101);
+    color: #fff;
+}
+.btnAll{
+    margin-top: 50px;
+}
+.bg-primary{
+    background-color: #fffbf0 !important;
+    
+}
+.display-3{
+    color:  rgb(68, 87, 101);
+    font-size: 32px;
+    font-weight: 600;
+}
+.font-weight-light{
+    color: #000;
+    font-size: 18pt;
+    padding-top: 40px;
+    line-height: 54px;
+}
+.pb-4{
+    text-align: left;
+    /* margin: auto; */
+    /* margin-left: 80px; */
+    margin-right: -100px;
+    width: 100%;
+}
+.text-right{
+    /* margin-right: 40px; */
+}
+.testing_bottom{
+    display: flex;
+}
+.testing_top{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(255 194 23);
+    text-align: center;
+    font-size: 36pt;
+    color: #fff;
+}
+.testing_content{
+    width: 1600px;
+    margin: auto;
+}
+.testtest_name{
+    width: 34%;
+    height: 700px;
+    background-color: rgb(255 247 228);
+    position: relative;
+}
+.testtest_name:nth-child(2){
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+.testtest_name_title {
+    font-size: 24pt;
+    color: #fff;
+    background-color: rgb(168 83 228);
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.testtest_name_content {
+    padding: 50px;
+}
+p.testtest_name_content_title_content {
+    font-size: 16pt;
+}
+p.testtest_name_content_title {
+    font-size: 24pt;
+}
+.img1,.img2,.img3{
     width: 300px;
     height: 400px;
-    background-color: aqua;
-    margin: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
-.direct{
-    width: 1600px;
-    height: 500px;
-    background-color: rgba(87, 124, 109, 0.507);
+.img1{
+    background-image: url(https://ddileaf-prod-manage-img.oss-cn-shanghai.aliyuncs.com/officialsite/images/tmp/%E5%88%86%E5%88%87-11.png);
 }
-.how{
-    width: 1600px;
-    height: 500px;
-    background-color: rgba(138, 37, 129, 0.507);
+.img2{
+    background-image: url(https://ddileaf-prod-manage-img.oss-cn-shanghai.aliyuncs.com/officialsite/images/tmp/%E5%88%86%E5%88%87-12.png);
 }
-.rule{
-    width: 1600px;
-    height: 500px;
-    background-color: rgba(198, 201, 43, 0.507);
+.img3{
+    background-image: url(https://ddileaf-prod-manage-img.oss-cn-shanghai.aliyuncs.com/officialsite/images/tmp/%E5%88%86%E5%88%87-13.png);
+}
+.carousel{
+    position: relative;
+    top: 100px;
+    width: 279px;
+}
+.carousel-indicators{
+    bottom: -123px;
+}
+.carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #000;
+}
+.card-title{
+    font-size: 30pt;
+    color: rgb(68, 87, 101);
+    /* padding: 60px 0 60px 100px; */
+    padding-bottom: 40px;
+}
+.card-text{
+    font-size: 18pt;
+    color: rgb(68, 87, 101);
+    /* padding: 0 0 30px 100px; */
 }
